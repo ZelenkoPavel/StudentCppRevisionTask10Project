@@ -6,8 +6,5 @@ int main() {
 	testingTask03();
 	testingTask04();
 	testingTaskX();
-
-	cout << task01(50) << endl;
-
 	return 0;
 }
