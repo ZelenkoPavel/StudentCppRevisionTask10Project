@@ -26,5 +26,18 @@
 */
 
 int task03(int number) {
-	return 0;
+	if (number <= 1){
+		return 0;
+	}
+
+	int the_smallest_natural_divisor;
+
+	for (int i = number; i > 1; i--)
+	{
+		if (number % i == 0) {
+			the_smallest_natural_divisor = i;
+		}
+	}
+
+	return the_smallest_natural_divisor;
 }
