@@ -32,5 +32,19 @@
 */
 
 bool taskX(long long number) {
-	return false;
+	number = number < 0 ? -number : number;
+
+	while (number > 9) {
+		int digit = number % 10;
+		number /= 10;
+		int n = number;
+		while (n > 0) {
+			if (n % 10 == digit) {
+				return false;
+			}
+			n /= 10;
+		}
+	}
+
+	return true;
 }
